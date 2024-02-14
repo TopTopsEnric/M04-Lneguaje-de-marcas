@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Strike&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-size: large;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+table {
+    border-collapse: collapse; /* Combina los bordes de las celdas de la tabla */
+}
+
+td {
+    border: 1px solid black; /* Borde negro para todas las celdas */
+    text-align: center;
+    font-family: "Roboto mono", sans-serif;
+}
+
+tr {
+    border: none;
+}
+
+#titulo {
+    background-color: rgb(135, 206, 250);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.blue td,
+.blue th {
+    background-color: rgb(173, 216, 230); /* Mismo fondo para th y td con clase blue */
+}
+
+#pop {
+    border: 1px solid white; /* Borde blanco para todas las celdas */
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+th {
+    border: 1px solid black; /* Borde negro para todas las celdas */
+    text-align: left;
+    font-family: "Protest Strike", sans-serif;
+}
