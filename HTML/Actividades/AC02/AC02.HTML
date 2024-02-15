@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACO02</title>
+    <link rel="stylesheet" href="AC02.CSS">
+</head>
+
+<body>
+    <h1>Inscripció Grau Superior</h1>
+    <form id="form" name="form1" action="#" target="_self" method="GET">
+        <fieldset id="primero">
+            <legend>Dades Personals</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nom"> Nom:</label><br>
+                            <input type="text" id="nom" name="nom" required="">
+                        </td>
+                        <td>
+                            <label for="Cognom"> Cognom:</label><br>
+                            <input type="text" id="Cognom" name="Cognom" required="">
+                        </td>
+                        <td class="margen">
+                            <label for="dni"> DNI</label><br>
+                            <input type="text" id="dni" name="dni" required="" pattern="(?)[0-9]{4}[A-z&&[^ilñu]]{1}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="ln"> Localitat de Naixement:</label><br>
+                            <input type="text" id="ln" name="ln" required="">
+                        </td>
+                        <td>
+                            <label for="select">Select</label>
+                            <select name="select" id="select" required="">
+                                <option value="opcion1">Madrid</option>
+                                <option value="opcion2">Barcelona</option>
+                                <option value="opcion3">Asturias</option>
+                                <option value="opcion4">Cuenca</option>
+                                <option value="opcion5">Granada</option>
+                                <option value="opcion6">Huelva</option>
+                                <option value="opcion7">Jaen</option>
+                                <option value="opcion8">Leon</option>
+                                <option value="opcion9">Lugo</option>
+                                <option value="opcion10">Palencia</option>
+                            </select>
+                        </td>
+                        <td class="margen">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" min="1900-01-01" max="01-01-2023">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="dirc"> Direccion</label><br>
+                            <input type="text" id="dirc" name="dirc" required="" size="40px">
+                        </td>
+                        <td class="margen">
+                            <label for="CD"> Codigo Postal</label><br>
+                            <input type="number" id="CD" name="CD" required="" pattern="[0-9]{5}">
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset id="segundo">
+
+            <legend> Forma D'Acces</legend>
+            <input type="radio" id="radio1" name="radio" checked>
+            <label for="radio1">
+                <label for="mod"> Baxillerat modalitat:</label>
+                <input type="text" id="mod" name="mod">
+            </label><br>
+
+            <input type="radio" id="radio1" name="radio" checked>
+            <label for="radio1">
+                <label for="cou"> COU Opció: </label>
+                <input type="text" id="cou" name="cou">
+            </label><br>
+
+            <input type="radio" id="radio1" name="radio" checked>
+            <label for="radio1">
+                <label for="gm"> FP Grau Mig.Cicle:</label>
+                <input type="text" id="gm" name="gm">
+            </label><br>
+
+            <input type="radio" id="radio1" name="radio" checked>
+            <label for="radio1">
+                <label for="sm"> FP Grau Superior.Cicle:</label>
+                <input type="text" id="sm" name="sm">
+            </label><br>
+
+            <input type="radio" id="radio1" name="radio" checked>
+            <label for="radio1">
+                <label for="altres"> Altres (especificar)</label>
+                <input type="text" id="altres" name="altres">
+            </label><br>
+
+        </fieldset>
+
+        <fieldset id="tercero">
+            <legend>Documents Adjunts</legend>
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check">Fotocopia DNI</label><br>
+
+
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check">
+                <label for="img">Certificat Acadèmic Selecciona document:</label>
+                <input type="file" id="img" name="img" accept="image/*">
+            </label><br>
+
+            <input type="checkbox" id="check1" name="check1">
+            <label for="check">
+
+                <label for="docu"> Altres documents (especificar)</label>
+                <input type="text" id="docu" name="docu">
+
+                <label for="img">Selecciona document:</label>
+                <input type="file" id="img" name="img" multiple accept="image/*">
+
+            </label><br>
+        </fieldset>
+        <input type="submit" name="sumit" value="Enviar Solicitud">
+    </form>
+
+</body>
+
+</html>
