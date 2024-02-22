@@ -31,5 +31,9 @@ legend{
 form{
     align-content: center;
     align-items: center;
-    text-align: center;
+    
+}
+
+#segundo > label {
+    margin-bottom: 10px;
 }
