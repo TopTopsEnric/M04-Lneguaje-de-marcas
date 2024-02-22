@@ -1,0 +1,36 @@
+img{
+    background: linear-gradient(90deg, rgba(232,230,9,1) 0%, rgba(214,191,5,1) 100%);
+    height: 400px;
+    width: 300px;
+    margin: 9px;
+}
+
+#poke-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+   
+}
+#pokeContent{
+    border-radius: 20px;
+    margin: 10px;
+    background: linear-gradient(90deg, rgba(164,164,164,1) 0%, rgba(125,125,122,1) 100%);
+    
+}
+h4{
+    margin: 0;
+}
+h2{
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    border-bottom-width:20px;
+    border-top-width:20px;
+    border-color: rgb(0, 0, 0);
+}
+#pokemon{
+    border-radius: 10px;
+    background-color: rgba(95, 94, 94, 0.897);
+    
+}

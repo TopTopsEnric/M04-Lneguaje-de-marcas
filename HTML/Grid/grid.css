@@ -1,0 +1,13 @@
+.grid {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px 10px;
+    grid-template-columns: 50% 50%;
+}
+
+.item {
+    padding: 10px;
+    background-color: rgb(21, 21, 187);
+}
