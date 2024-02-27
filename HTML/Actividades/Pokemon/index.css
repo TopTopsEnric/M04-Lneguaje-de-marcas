@@ -1,5 +1,7 @@
+
+
 img{
-    background: linear-gradient(90deg, rgba(232,230,9,1) 0%, rgba(214,191,5,1) 100%);
+    background: #ffd700;
     height: 400px;
     width: 300px;
     margin: 9px;
@@ -14,11 +16,12 @@ img{
 #pokeContent{
     border-radius: 20px;
     margin: 10px;
-    background: linear-gradient(90deg, rgba(164,164,164,1) 0%, rgba(125,125,122,1) 100%);
-    
+    background: #c0c0c0;
+    grid-column: 1;
 }
 h4{
     margin: 0;
+    margin-top: 10px;
 }
 h2{
     color: white;
@@ -29,8 +32,81 @@ h2{
     border-top-width:20px;
     border-color: rgb(0, 0, 0);
 }
+li {
+    display: inline; 
+}
 #pokemon{
     border-radius: 10px;
-    background-color: rgba(95, 94, 94, 0.897);
+    background-color: #808080;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-column-gap: 5px; 
+    align-items: center; 
+    border: 1px solid #ccc; 
+    padding: 0px; 
     
 }
+#pokeHeight {
+    display: inline;
+    
+}
+#pokeWeight {
+    display: inline;
+    margin-left: 70px;
+    grid-column: 2;
+    justify-self: end;
+}
+h4::first-letter {
+    text-transform: uppercase;
+    font-size: large;
+  }
+#pokeContent > * {
+    padding-left: 20px;
+}
+
+#pokeNumber::before {
+    content: "Code: ";
+  }
+
+  #pokeHeight::before {
+    content: "Height: ";
+  }
+
+  #pokeWeight::before {
+    content: "Weight: ";
+  }
+
+  #pokeWeight::after {
+    content: " kg ";
+  }
+  
+  ul::before {
+    content: "Type: ";
+  }
+
+  li:not(:last-child)::after {
+    content: ","; 
+}
+
+@media only screen and (min-width: 801px) {
+    #poke-container {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+    #poke-container {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #poke-container {
+        grid-template-columns: 100%;
+    }
+}
+  
