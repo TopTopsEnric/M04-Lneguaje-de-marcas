@@ -1,0 +1,86 @@
+body{
+    background-image: url("mapa.jpg");
+}
+nav{
+    text-align: center;
+}
+a{
+    margin-left: 50px;
+    margin-right: 50px;
+    color:  rgb(128,0,0);
+    font-size: 25px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+    color: rgb(61,100,45);
+}
+h1{
+    text-align: center;
+    color:  rgb(128,0,0);
+    font-size: 100px;
+}
+img{
+    height: 250px;
+    width: 350px;
+    margin: 15px;
+    border-radius: 20px;
+    border-color: black;
+
+}
+
+#americano{
+    background-image: url("americano.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+
+#sherman{
+    background-image: url("sherman.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+
+#artilleria{
+    background-image: url("artilleria1.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+#japon{
+    background-image: url("japon.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+
+#soviet{
+    background-image: url("soviet.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+
+#panzer{
+    background-image: url("Panzer.jpg");
+    height: 250px;
+    width: 350px;
+    background-size: contain;
+}
+
+
+#agrupador{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hijos{
+    margin: 25px;
+}
+#agrupador>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

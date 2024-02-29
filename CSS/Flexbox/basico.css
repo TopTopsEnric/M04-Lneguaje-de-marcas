@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-container>div{
+    margin: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+}

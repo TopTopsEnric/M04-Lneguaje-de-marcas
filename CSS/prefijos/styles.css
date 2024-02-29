@@ -1,0 +1,70 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(237, 100, 191);
+   -webkit-transition: all 1.5s;
+   -o-transition: all 1.5s;
+   transition: all 1.5s; 
+
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(43, 129, 22);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.example {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.example2 {
+    background: gradient(linear, left top, left bottom, from(#333),to(#EEE));
+    background: -webkit-gradient(linear, left top, left bottom, from(#333),to(#EEE));
+    background: -o-linear-gradient(top, #333 0%,#EEE 100%);
+    background: linear-gradient(top, #333 0%,#EEE 100%);
+}
+
+.input-element {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.page-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;         
+}
+
+.main-sidebar {
+   -webkit-box-flex: 1;
+       -ms-flex: 1;
+           flex: 1;              
+}
+
+.header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
