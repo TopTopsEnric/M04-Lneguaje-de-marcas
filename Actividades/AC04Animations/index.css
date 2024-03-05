@@ -1,3 +1,17 @@
+@keyframes div_hijos {
+    from {opacity: 0;
+        background-color: rgb(74, 111, 34, 0);}
+  to {opacity: 1;
+    background-color: rgb(74, 111, 34, 0.5);}
+  }
+  @keyframes back_image {
+    from {
+        background-size: 100% 100%;
+    }
+    to {
+        background-size: 150% 150%;
+    }
+}
 body{
     background-image: url("mapa.jpg");
 }
@@ -20,57 +34,43 @@ h1{
     color:  rgb(128,0,0);
     font-size: 100px;
 }
-img{
+.hijos>*{
+    flex: 30%;
     height: 250px;
     width: 350px;
-    margin: 15px;
-    border-radius: 20px;
-    border-color: black;
-
+    background-size:cover;
+    margin: 10px;
 }
-
 #americano{
     background-image: url("americano.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
 
 #sherman{
     background-image: url("sherman.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
 
 #artilleria{
     background-image: url("artilleria1.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
+
 #japon{
     background-image: url("japon.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
 
 #soviet{
     background-image: url("soviet.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
 
 #panzer{
     background-image: url("Panzer.jpg");
-    height: 250px;
-    width: 350px;
-    background-size: contain;
 }
 
-
+.marcador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 #agrupador{
     text-align: center;
     margin-top: 80px;
@@ -78,9 +78,57 @@ img{
 
 .hijos{
     margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #agrupador>div{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.marcador> *{
+    opacity: 0;
+    background-color: rgb(74, 111, 34,0);
+}
+
+.marcador> *:hover{
+    animation-name: div_hijos;
+    animation-duration: 3s;
+}
+
+.marcador:hover{
+    animation-name: back_image;
+    animation-duration: 3s;
+}
+ 
+.decorador>*{
+margin-top: 5px;
+color: white;
+}
+
+.decorador>button{
+    background-color: black;
+    margin-top: 50px;
+}
+p{
+    font-size: large;
+}
+@media only screen and (min-width: 801px) {
+    .hijos > * {
+        flex: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+    
+    .hijos > * {
+        flex: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hijos > * {
+        flex: 100%;
+    }
 }
