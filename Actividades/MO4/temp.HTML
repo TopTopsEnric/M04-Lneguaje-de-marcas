@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+
+<body>
+    <script src="temp.js"></script>
+    <h1>Buenos destructivas</h1>
+    <div class="img">
+        <img src="temp.png" alt="Error,no hay foto">
+    </div>
+    <div id="divisor">
+      
+            <fieldset id="form">
+                <div class="espacio">
+                    <label for="fname">From:</label>
+                    <select name="temp1" id="temp1">
+                        <option value="Celsius">Celsius(ºC)</option>
+                        <option value="Kevin">Kevin(ºK)</option>
+                        <option value="Fahreinheit">Fahreinheit(ºF)</option>
+                        <option value="Rankine">Rankine(ºR)</option>
+                    </select>
+                </div>
+                <div class="espacio">
+                    <label for="fname">To:</label>
+                    <select name="temp2" id="temp2">
+                        <option value="Celsius">Celsius(ºC)</option>
+                        <option value="Kevin">Kevin(ºK)</option>
+                        <option value="Fahreinheit">Fahreinheit(ºF)</option>
+                        <option value="Rankine">Rankine(ºR)</option>
+                    </select>
+                </div>
+                <div id="doble" class="espacio">
+                    <label for="fname">Enter Temperature:</label>
+                    <input type="number" name="temperatura" id="temperatura" placeholder="Enter Temperatura" />
+                </div>
+                <button type="submit" onclick="calc(
+                
+                document.getElementById('temp1').value,
+                document.getElementById('temp2').value,
+                document.getElementById('temperatura').value
+
+                )">Convert</button>
+                <input type="text" name="resp" id="resp" />
+            </fieldset>
+ 
+        <fieldset>
+            <h2>Formula</h2>
+            <p id="texto"></p>
+        </fieldset>
+    </div>
+    <h3>toulo</h3>
+    <div  class="img">
+        <img src="table.png" alt="Error,no hay foto">
+    </div>
+</body>
+
+</html>
