@@ -1,4 +1,4 @@
-function calc(opcion1, opcion2, valor,texto){
+function calc(opcion1, opcion2, valor){
      let r;
     switch (opcion1) {
         case "Celsius":
