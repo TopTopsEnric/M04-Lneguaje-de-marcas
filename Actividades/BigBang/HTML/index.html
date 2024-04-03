@@ -30,23 +30,23 @@
     <div id="juego">
         <h3 class="text-white">Select a option:</h3>
         <div>
-            <button type="button" class="btn">
-                <img class="rounded-circle" src="../Assets/Img/lagarto.jpg" alt="Button Image" width="200" height="200">
+            <button id="lagarto" type="button" class="btn">
+                <img id="imlagarto" class="rounded-circle" src="../Assets/Img/lagarto.jpg" alt="Button Image" width="200" height="200">
             </button>
-            <button type="button" class="btn">
-                <img class="rounded-circle" src="../Assets/Img/papel.jpg" alt="Button Image" width="200" height="200">
+            <button  id="papel" type="button" class="btn">
+                <img  id="impapel"class="rounded-circle" src="../Assets/Img/papel.jpg" alt="Button Image" width="200" height="200">
             </button>
-            <button type="button" class="btn">
-                <img class="rounded-circle" src="../Assets/Img/piedra.jpg" alt="Button Image" width="200" height="200">
+            <button id="piedra" type="button" class="btn">
+                <img id="impiedra" class="rounded-circle" src="../Assets/Img/piedra.jpg" alt="Button Image" width="200" height="200">
             </button>
-            <button type="button" class="btn">
-                <img class="rounded-circle" src="../Assets/Img/spoke.jpg" alt="Button Image" width="200" height="200">
+            <button  id="spoke" type="button" class="btn">
+                <img id="imspoke" class="rounded-circle" src="../Assets/Img/spoke.jpg" alt="Button Image" width="200" height="200">
             </button>
-            <button type="button" class="btn">
-                <img class="rounded-circle" src="../Assets/Img/tijeras.jpg" alt="Button Image" width="200" height="200">
+            <button id="tijeras" type="button" class="btn">
+                <img id="imtijeras" class="rounded-circle" src="../Assets/Img/tijeras.jpg" alt="Button Image" width="200" height="200">
             </button>
         </div>
-        <button type="button" class="btn btn-info">Info</button>
+        <button id="play" class="btn btn-info">Jugar</button>
         <div class="container">
             <div class="row">
                 <div class="col bg-black text-white">
@@ -54,10 +54,10 @@
                         <h4>Your choice:</h4>
                     </div>
                     <div>
-                        <img class="rounded-circle" src="../Assets/Img/spoke.jpg" alt="Button Image" width="200" height="200">
+                        <img id="jugador" class="rounded-circle" src="../Assets/Img/spoke.jpg" alt="Button Image" width="200" height="200">
                     </div>
                     <div>
-                        <p>Points:0</p>
+                        <p id="pjugador">Points:0</p>
                     </div>
 
                 </div>
@@ -66,19 +66,20 @@
                         <h4>Enemy choice:</h4>
                     </div>
                     <div>
-                        <img class="rounded-circle"  src="../Assets/Img/papel.jpg" alt="Button Image" width="200" height="200">
+                        <img  id="maquina" class="rounded-circle"  src="../Assets/Img/papel.jpg" alt="Button Image" width="200" height="200">
                     </div>
                     <div>
-                        <p>Points:0</p>
+                        <p id="pmaquina">Points:0</p>
                     </div>
                 </div>
 
             </div>
         </div>
         <div>
-            <p>DFJSJFSK</p>
+            <p id="resultado" class="text-white">----------</p>
         </div>
     </div>
+    <script src="../Assets/JS/index.js"></script>
 </body>
 
 </html>
