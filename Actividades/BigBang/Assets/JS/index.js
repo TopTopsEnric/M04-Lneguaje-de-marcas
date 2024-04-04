@@ -6,10 +6,33 @@ const scissors = path + "tijeras.jpg";
 const lizard = path + "lagarto.jpg";
 const spock = path + "spoke.jpg";
 const opcion = document.getElementById("maquina");
-let victorias=0;
-let derrotas=0;
+let victorias = 0;
+let derrotas = 0;
 function play() {
-
+    setTimeout(function () {
+        random();
+    }, 200);
+    setTimeout(function () {
+        random();
+    }, 300);
+    setTimeout(function () {
+        random();
+    }, 400);
+    setTimeout(function () {
+        random();
+    }, 500);
+    setTimeout(function () {
+        random();
+    }, 600);
+    setTimeout(function () {
+        random();
+    }, 700);
+    setTimeout(function () {
+        random();
+    }, 800);
+    setTimeout(function () {
+        random();
+    }, 900);
     setTimeout(function () {
         random();
     }, 1000);
@@ -54,19 +77,19 @@ function results() {
     let opcion = "";
     switch (link) {
         case "../Assets/Img/lagarto.jpg":
-            opcion="Lagarto";
+            opcion = "Lagarto";
             break;
         case "../Assets/Img/papel.jpg":
-            opcion="Papel";
+            opcion = "Papel";
             break;
         case "../Assets/Img/piedra.jpg":
-            opcion="Piedra"
+            opcion = "Piedra"
             break;
         case "../Assets/Img/spoke.jpg":
-            opcion="Spoke"
+            opcion = "Spoke"
             break;
         case "../Assets/Img/tijeras.jpg":
-            opcion="Tijeras"
+            opcion = "Tijeras"
             break;
         default:
             break;
@@ -75,19 +98,19 @@ function results() {
     let maquina = "";
     switch (resp) {
         case "../Assets/Img/lagarto.jpg":
-            maquina="Lagarto";
+            maquina = "Lagarto";
             break;
         case "../Assets/Img/papel.jpg":
-            maquina="Papel";
+            maquina = "Papel";
             break;
         case "../Assets/Img/piedra.jpg":
-            maquina="Piedra"
+            maquina = "Piedra"
             break;
         case "../Assets/Img/spoke.jpg":
-            maquina="Spoke"
+            maquina = "Spoke"
             break;
         case "../Assets/Img/tijeras.jpg":
-            maquina="Tijeras"
+            maquina = "Tijeras"
             break;
         default:
             break;
@@ -106,7 +129,7 @@ function results() {
                 case "Papel":
                     resultado = resultados[1];
                     break;
-                case "Tijera":
+                case "Tijeras":
                     resultado = resultados[0];
                     break;
                 case "Lagarto":
@@ -126,7 +149,7 @@ function results() {
                 case "Papel":
                     resultado = resultados[2];
                     break;
-                case "Tijera":
+                case "Tijeras":
                     resultado = resultados[1];
                     break;
                 case "Lagarto":
@@ -138,7 +161,7 @@ function results() {
             }
 
             break;
-        case "Tijera":
+        case "Tijeras":
             switch (maquina) {
                 case "Piedra":
                     resultado = resultados[1];
@@ -146,7 +169,7 @@ function results() {
                 case "Papel":
                     resultado = resultados[0];
                     break;
-                case "Tijera":
+                case "Tijeras":
                     resultado = resultados[2];
                     break;
                 case "Lagarto":
@@ -165,7 +188,7 @@ function results() {
                 case "Papel":
                     resultado = resultados[0];
                     break;
-                case "Tijera":
+                case "Tijeras":
                     resultado = resultados[1];
                     break;
                 case "Lagarto":
@@ -184,7 +207,7 @@ function results() {
                 case "Papel":
                     resultado = resultados[1];
                     break;
-                case "Tijera":
+                case "Tijeras":
                     resultado = resultados[0];
                     break;
                 case "Lagarto":
@@ -196,20 +219,20 @@ function results() {
             }
             break;
     }
-    if(resultado==resultados[0]){
-        victorias=victorias+1;
-    }else if(resultado==resultados[1]){
-        derrotas=derrotas+1;
+    if (resultado == resultados[0]) {
+        victorias = victorias + 1;
+    } else if (resultado == resultados[1]) {
+        derrotas = derrotas + 1;
     }
-    document.getElementById('resultado').innerHTML=resultado;
+    document.getElementById('resultado').innerHTML = resultado;
 
 
 }
 
 function getPoints() {
-    document.getElementById('pjugador').innerHTML="Points:"+victorias;
-    document.getElementById('pmaquina').innerHTML="Points:"+derrotas;
-   
+    document.getElementById('pjugador').innerHTML = "Points:" + victorias;
+    document.getElementById('pmaquina').innerHTML = "Points:" + derrotas;
+
 }
 function random() {
     const ran = Math.floor(Math.random() * 5);
