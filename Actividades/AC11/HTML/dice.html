@@ -12,10 +12,12 @@
         <label for="dice">Number:</label>
         <br>
         <input type="number" name="dice" id="dice">
+        <p id="red"></p>
         <br>
-        <input type="submit" value="Roll">
+        <button type="button" id="button" onclick="execute(document.getElementById('dice').value)">Roll</button>
         <p>Click the button to roll a number of dice.</p>
     </form>
     <div id="results"></div>
+    <script src="../ASSSETS/JS/dice.js"></script>
 </body>
 </html>
