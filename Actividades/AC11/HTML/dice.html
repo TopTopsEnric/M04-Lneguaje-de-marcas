@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../ASSSETS/CSS/dice.css">
 </head>
+
 <body>
     <h1>Roll a number</h1>
-    <form action="dice_number">
-        <label for="dice">Number:</label>
-        <br>
-        <input type="number" name="dice" id="dice">
-        <p id="red"></p>
-        <br>
-        <button type="button" id="button" onclick="execute(document.getElementById('dice').value)">Roll</button>
-        <p>Click the button to roll a number of dice.</p>
-    </form>
+    <label for="dice">Number:</label>
+    <br>
+    <input type="number" name="dice" id="dice">
+    <p id="este" class="red"></p>
+    <br>
+    <button onclick="execute(document.getElementById('dice').value)">Roll</button>
+    <p class="red">Click the button to roll a number of dice.</p>
+
     <div id="results"></div>
     <script src="../ASSSETS/JS/dice.js"></script>
 </body>
+
 </html>
